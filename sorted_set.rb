@@ -21,7 +21,7 @@ class BasicArraySortedSet
 
   # Use the array's native sort method
   def get_sorted_array
-    # @array.sort
+    # sorted_array = @array.sort
   end
 end
 
@@ -56,6 +56,7 @@ end
 # it when asking for sorted array
 class ArraySortedSet
   def initialize
+    @array = []
   end
 
   def name
@@ -64,6 +65,7 @@ class ArraySortedSet
 
   # Insert the element at the proper index to maintain the sort order
   def insert(element)
+
   end
 
   def include?(element)
