@@ -1,6 +1,8 @@
 class BasicArraySortedSet
+  attr_accessor 
   # Create your internal data structure here. It should be an empty array
   def initialize
+    @array = []
   end
 
   def name
@@ -9,14 +11,17 @@ class BasicArraySortedSet
 
   # Use the array's native insert method
   def insert(element)
+    @array << element
   end
 
   # Use the array's native include method
   def include?(element)
+    # @array.include?(element)
   end
 
   # Use the array's native sort method
   def get_sorted_array
+    # @array.sort
   end
 end
 
@@ -24,6 +29,7 @@ end
 # the sorted set's methods
 class HashSortedSet
   def initialize
+    @hash = {}
   end
 
   def name
@@ -32,12 +38,16 @@ class HashSortedSet
 
   # Insert the key value pair (element, true)
   def insert(element)
+    @hash[element] = true
   end
 
   def include?(element)
+    @hash.include?[element]
   end
 
+
   def get_sorted_array
+    @hash.sort
   end
 end
 
